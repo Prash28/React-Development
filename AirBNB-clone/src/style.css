@@ -20,12 +20,13 @@ nav{
 }
 .card--image{
     margin-bottom: 2px;
+    background-size: cover;
     height:280px;
     width: 220px;
     border-radius: 10px;
 }
 .gray{
-    color:grey;
+    color:#918E9B;
 }
 .card--details{
     margin-left: 10px;
@@ -36,4 +37,13 @@ nav{
 }
 .card--stats{
     display: flex;
+}
+section{
+    padding: 20px;  
+}
+.cards-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    overflow-x: auto;
 }

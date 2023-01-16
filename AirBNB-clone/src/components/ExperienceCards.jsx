@@ -1,10 +1,10 @@
 import React from "react"
 
 export default function ExperienceCards (props) {
-    console.log(props)
+    // console.log(props)
     return (
         <div className="card">
-            <img src={`../images/${props.img}`} className="card--image" />
+            <img src={`../public/images/${props.img}`} className="card--image" />
             <div className="card--stats">
                 <img src="../images/Star.png" className="card--star" />
                 <span>{props.rating}</span>
