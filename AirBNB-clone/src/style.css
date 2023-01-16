@@ -2,8 +2,11 @@
     box-sizing: border-box;
 }
 body {
+    
     margin: 0;
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+    font-weight: normal;
 }
 
 .nav--logo {
@@ -90,28 +93,124 @@ section{
 }
 .toplearnmoresection{
     /* text-align: center; */
-    margin-top: 10px;
-    margin-left:40%;
+    /* margin-top: 10px;
+    margin-left:40%; */
+    display: flex;
+    justify-content: center;
 }
 .topsection--learnmore{
     cursor: pointer;
 }
+/* .container :not(#unblurred){
+    filter: blur(1px);
+} */
 .popup{
+    display: 'flex';
+    align-items: 'center';
+    justify-content: 'center';
     position: fixed;
-    top:40%;
-    left:40%;
-    margin: auto;
-    background-color: #fff2f2;
+    width: 60%;
+    height:80%;
+    z-index: 1000;
+    background-color: white;
+    border-radius: 15px;
+    margin-top:70px;
+    /* filter: blur(0px); */
 }
 .popup-inner{
     position: relative;
-    padding: 32px;
     width: 100%;
-    max-width: 640px;
-    background-color: white;
+    height:100%;
+    /* max-width: 640px; */
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    /* filter: blur(0px); */
 }
 .popup-inner .close-btn{
     position: absolute;
     top: 16px;
-    right: 16px;
+    /* right: 16px; */
+    
+}
+.topsection--learnmorebutton{
+    cursor: pointer;
+    color: black;
+    border-radius: 0px;
+    border-width: 0;
+    background-color: white;
+    margin-left:0px;
+    text-decoration: underline;
+    font-weight:700;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+}
+.toplearnmoresection{
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+}
+.pop-up-box{
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    padding-left:80px;
+    margin-bottom:0px;
+    border-radius: 15px;
+}
+.popup-image{
+    background-image: url("../public/images/airbnb_popup_tablet_image.webp");
+    height:600px;
+    width:50%;
+    margin-left: auto;
+    background-size: cover;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.close-btn{
+    font-weight: bold;
+    font-size:20px;
+    border:0px;
+    border-top-left-radius: 15px;
+    margin-left:10px;
+    background-color:#f2f2f2;
+}
+.popup-early-access-button{
+    background-color: #f2f2f2;
+    border: 3px grey solid;
+    border-radius:5px;
+    color: grey;
+    padding:5px;
+    font-size:10px;
+    font-weight:bold;
+    width: 110px;
+    margin-bottom:30px;
+}
+.popup-try-now-button{
+    color: white;
+    background-color: black;
+    height:50px;
+    width:120px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size:16px;
+    padding:5px;
+    line-height: 0;
+    cursor: pointer;
+}
+.pop-up-box>div>h4{
+    font-weight: normal;
+    /* border:1px red solid; */
+    margin-top:5px;
+    margin-bottom:5px;
+    font-size:19px;
+}
+.pop-up-box>div>h4>u{
+    margin-top:5px;
+    font-size:19px;
+    cursor: pointer;
+}
+.pop-up-box>div>h1{
+    font-size: 60px;
+    /* border:1px red solid; */
+    margin-top:2px;
+    margin-bottom:2px;
 }

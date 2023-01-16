@@ -4,11 +4,9 @@ import ExperienceSection from "./components/ExperienceSection.jsx"
 import ExperienceCards from "./components/ExperienceCards.jsx"
 import TopLearnMoresection from "./components/TopLearnMoresection.jsx"
 import data from "./data.js"
-import Popup from "./components/popup.jsx"
-import { useState } from "react"
+
 
 export default function App() {
-    const [buttonPopup, setButtonPopup] = useState(false)
 
     const cards = data.map(item => {
         return(
@@ -27,7 +25,7 @@ export default function App() {
     })
     return (
         <div className="container">
-            <TopLearnMoresection />
+            <div id="unblurred"><TopLearnMoresection /></div>
             <Navbar />
             <ExperienceSection />
             <section className="cards-list">
