@@ -1,7 +1,7 @@
 export default
 [
     {
-        id: 1,
+        id: 1, //unique ID for each item
         title: "Lionel Messi",
         description: "I will share with you what I call \"Positively Impactful Moments of Disappointment.\" Throughout my career, many of my highest moments only came after setbacks and losses. But learning from those difficult moments is what gave me the ability to rise above them and reach my goals.",
         price: 136,
@@ -11,7 +11,7 @@ export default
             reviewCount: 6
         },
         location: "Online",
-        openSpots: 0,
+        openSpots: 1,
     },
     {
         id: 2,
@@ -24,7 +24,7 @@ export default
             reviewCount: 30
         },
         location: "Online",
-        openSpots: 27,
+        openSpots: 0,
     },
     {
         id: 3,
