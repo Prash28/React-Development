@@ -3,6 +3,8 @@ import Navbar from "./components/Navbar.jsx"
 import ExperienceSection from "./components/ExperienceSection.jsx"
 import ExperienceCards from "./components/ExperienceCards.jsx"
 import TopLearnMoresection from "./components/TopLearnMoresection.jsx"
+import CategoryFilterSection from "./components/CategoryFilterSection.jsx"
+// import Hearticon from "./components/Like-heart-icon.jsx"
 import data from "./data.js"
 
 
@@ -27,10 +29,13 @@ export default function App() {
         <div className="container">
             <div id="unblurred"><TopLearnMoresection /></div>
             <Navbar />
+            <CategoryFilterSection />
             <ExperienceSection />
+            {/* <Hearticon /> */}
             <section className="cards-list">
                 {cards}
             </section>
+            
         </div>
     )
 }
