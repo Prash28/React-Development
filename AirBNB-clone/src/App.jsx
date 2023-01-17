@@ -4,9 +4,10 @@ import ExperienceSection from "./components/ExperienceSection.jsx"
 import ExperienceCards from "./components/ExperienceCards.jsx"
 import TopLearnMoresection from "./components/TopLearnMoresection.jsx"
 import CategoryFilterSection from "./components/CategoryFilterSection.jsx"
-// import Hearticon from "./components/Like-heart-icon.jsx"
-import data from "./data.js"
+import Footer from "./components/Footer.jsx"
 
+import data from "./data.js"
+import categorydata from "./categorydata.js"
 
 export default function App() {
 
@@ -25,17 +26,26 @@ export default function App() {
             />
         )
     })
+    const category = categorydata.map(categoryitem => {
+        return(
+            <CategoryFilterSection
+            key = {categoryitem.id}
+            {...categoryitem}
+            />
+        )
+    })
     return (
         <div className="container">
             <div id="unblurred"><TopLearnMoresection /></div>
             <Navbar />
-            <CategoryFilterSection />
+            <section className="category-nav-list">
+                {category}
+            </section>
             <ExperienceSection />
-            {/* <Hearticon /> */}
             <section className="cards-list">
                 {cards}
             </section>
-            
+            <Footer />
         </div>
     )
 }

@@ -38,5 +38,70 @@ export default
         },
         location: "Goa",
         openSpots: 3,
-    }
+    },
+    {
+        id: 1, //unique ID for each item
+        title: "Lotus Villa",
+        description: "I will share with you what I call \"Positively Impactful Moments of Disappointment.\" Throughout my career, many of my highest moments only came after setbacks and losses. But learning from those difficult moments is what gave me the ability to rise above them and reach my goals.",
+        price: 136,
+        coverImg: "https://a0.muscache.com/im/pictures/miso/Hosting-722179355353877964/original/bdd5abd9-b8e8-4369-beee-c28c377ff4db.jpeg?im_w=720",
+        stats: {
+            rating: 5.0,
+            reviewCount: 6
+        },
+        location: "Online",
+        openSpots: 1,
+    },
+    {
+        id: 1, //unique ID for each item
+        title: "Lotus Villa",
+        description: "I will share with you what I call \"Positively Impactful Moments of Disappointment.\" Throughout my career, many of my highest moments only came after setbacks and losses. But learning from those difficult moments is what gave me the ability to rise above them and reach my goals.",
+        price: 136,
+        coverImg: "https://a0.muscache.com/im/pictures/miso/Hosting-722179355353877964/original/bdd5abd9-b8e8-4369-beee-c28c377ff4db.jpeg?im_w=720",
+        stats: {
+            rating: 5.0,
+            reviewCount: 6
+        },
+        location: "Online",
+        openSpots: 1,
+    },
+    {
+        id: 1, //unique ID for each item
+        title: "Lotus Villa",
+        description: "I will share with you what I call \"Positively Impactful Moments of Disappointment.\" Throughout my career, many of my highest moments only came after setbacks and losses. But learning from those difficult moments is what gave me the ability to rise above them and reach my goals.",
+        price: 136,
+        coverImg: "https://a0.muscache.com/im/pictures/miso/Hosting-722179355353877964/original/bdd5abd9-b8e8-4369-beee-c28c377ff4db.jpeg?im_w=720",
+        stats: {
+            rating: 5.0,
+            reviewCount: 6
+        },
+        location: "Online",
+        openSpots: 1,
+    },
+    {
+        id: 1, //unique ID for each item
+        title: "Lotus Villa",
+        description: "I will share with you what I call \"Positively Impactful Moments of Disappointment.\" Throughout my career, many of my highest moments only came after setbacks and losses. But learning from those difficult moments is what gave me the ability to rise above them and reach my goals.",
+        price: 136,
+        coverImg: "https://a0.muscache.com/im/pictures/miso/Hosting-722179355353877964/original/bdd5abd9-b8e8-4369-beee-c28c377ff4db.jpeg?im_w=720",
+        stats: {
+            rating: 5.0,
+            reviewCount: 6
+        },
+        location: "Online",
+        openSpots: 1,
+    },
+    {
+        id: 1, //unique ID for each item
+        title: "Lotus Villa",
+        description: "I will share with you what I call \"Positively Impactful Moments of Disappointment.\" Throughout my career, many of my highest moments only came after setbacks and losses. But learning from those difficult moments is what gave me the ability to rise above them and reach my goals.",
+        price: 136,
+        coverImg: "https://a0.muscache.com/im/pictures/miso/Hosting-722179355353877964/original/bdd5abd9-b8e8-4369-beee-c28c377ff4db.jpeg?im_w=720",
+        stats: {
+            rating: 5.0,
+            reviewCount: 6
+        },
+        location: "Online",
+        openSpots: 1,
+    },
 ]
