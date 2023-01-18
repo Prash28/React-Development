@@ -28,17 +28,19 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    z-index: 6;
 }
 .signup-close-btn{
-    background-color: white;
+    background-color: rgb(245, 245, 245);
     border:0px;
-    font-weight: bold;
+    /* font-weight: bold; */
     font-size:15px;
     position: absolute;
     top: 10px;
     left:10px;
     cursor:pointer;
     border-radius:50%;
+    z-index: 6;
 }
 .signup-close-btn:hover{
     background-color: #e0e0e0bc;
@@ -67,7 +69,6 @@ nav{
     background-size: 200% 200%;
     /* opacity: 0; */
     transition: opacity 1.25s ease 0s;
-    
     background-image: radial-gradient(circle at center center, rgb(255, 56, 92) 0%, rgb(230, 30, 77) 27.5%, rgb(227, 28, 95) 40%, rgb(215, 4, 102) 57.5%, rgb(189, 30, 89) 75%, rgb(189, 30, 89) 100%);
 }
 .social-media-button{
@@ -383,6 +384,9 @@ margin-bottom:5px;
     margin-top:2px;
     margin-bottom:2px;
 }
+#myDropdown{
+    /* display: block; */
+}
 .dropbtn, .fa-caret-down{
     margin-right: 10px;
     height:0px;
@@ -392,7 +396,11 @@ margin-bottom:5px;
     background-color:white;
     /* border: 1px red solid; */
     z-index:0;
+    cursor: pointer;
 } 
+.dropbtn:hover{
+    box-shadow: 0px 2.98256px 10px rgba(0, 0, 0, 0.2);
+}
 .dropbtn>img{
     height:25px;
     width:25px;
@@ -402,7 +410,6 @@ margin-bottom:5px;
 .navbar a:hover, .dropdown:hover .dropbtn {
     color:grey;    
 }
-
 .dropbtn{
 /* margin-left:80vw; */
 /* border:1px red solid; */
@@ -419,7 +426,7 @@ padding-top:6px;
 height:40px;
 position: relative;
 right: 20%;
-
+transition: box-shadow 0.5s ease;
 }
 .dropbtn>img{
 margin-right:5px;
@@ -455,10 +462,14 @@ background-color: #ddd;
 /* border-radius:15px; */
 }
 
-.dropdown:hover .dropdown-content {
-display: block;
+/* .dropdown:hover .dropdown-content {
+display: block; */
 /* border-radius:15px; */
-}
+/* } */
+.dropdown:focus-within .dropdown-content{
+    display: block;
+    /* border-radius:15px; */
+    }
 .dropdown{
     /* border: 1px red solid; */
     margin-right:0px;
@@ -466,14 +477,17 @@ display: block;
 .signup{
 position: fixed;
 width: 40%;
-height:90%;
+height:80%;
 top:35px;
 left:30%;
 margin-left:auto;
 margin-right: auto;
 background-color: white;
-border-radius: 15px;
+/* border-radius: 10px; */
 z-index: 6;
+/* border-color: 1px black solid; */
+margin-bottom:0px;
+padding-bottom:0px;
 /* filter: blur(0px); */
 }
 /* .signup :not(#unblurred){
@@ -487,23 +501,29 @@ justify-content: center;
 background-color: white;
 text-align: center;
 margin-top:0px;
+border-color: 3px red solid;
 padding:30px;
 z-index: 3;
 border-radius: 15px;
-/* background-color: yellow; */
-z-index: 5;
+background-color: rgb(245, 245, 245);
+z-index: 6;
+border-radius: 0px 0px 8px 8px;
+margin-bottom:0px;
 }
 .signup-header{
     display: flex;
     flex-direction: row;
     margin-bottom:0px;
     padding-bottom:0px;
-    /* background-color: red; */
-    z-index: 5;
+    background-color: rgb(245, 245, 245);
+    z-index: 6;
+    border-radius: 8px 8px 0px 0px;
+    border-color: 1px black solid;
 }
 .signup-textbox{
     height:40px;
-    /* border-color: rgb(234, 234, 234); */
+    border-color: rgb(234, 234, 234);
+    border-width: 1px;
     /* background-color: var(--f-mkcy-f); */
 }
 .signup-textbox-phone{
@@ -515,6 +535,10 @@ z-index: 5;
 }
 .signup-privacypolicy{
     font-size: 12px;
+}
+.signup-privacypolicy>u{
+    font-weight: bold;
+    cursor: pointer;
 }
 .signup-socialmedia-login-button{
     background-color: white;
