@@ -566,6 +566,14 @@ margin-bottom:0px;
     border-radius: 0 0 0 5px;
     transform: rotate(-45deg);
 }
+.heart-icon:hover{
+    background-color: red;
+    opacity: 100%;
+}
+.heart-icon:active{
+    background-color: red;
+    opacity:90%;
+}
 .heart-icon::before{
     position: absolute;
     content: "";

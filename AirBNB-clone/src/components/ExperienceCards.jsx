@@ -16,7 +16,7 @@ export default function ExperienceCards (props) {
         <div className="card">
            {badgeText==="ONLINE" && <div className="card--badge--online">{badgeText}</div>}
            {badgeText==="SOLD OUT" && <div className="card--badge--soldout">{badgeText}</div>}
-           <Hearticon />
+           <div><Hearticon /></div>
             {/* for images stored in public/images folder */}
             {/* <img src={`../public/images/${props.item.coverImg}`} className="card--image" /> */}
             {/* for images in internet */}
