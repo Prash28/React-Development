@@ -11,6 +11,7 @@ body {
 
 .nav--logo {
     max-width: 100px;
+    z-index: 1;
 }
 nav{
     height: 70px;
@@ -21,11 +22,110 @@ nav{
     top:0px;
     position: sticky;
     background-color: white;
+    z-index: 2;
+}
+.signup-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.signup-close-btn{
+    background-color: white;
+    border:0px;
+    font-weight: bold;
+    font-size:15px;
+    position: absolute;
+    top: 10px;
+    left:10px;
+    cursor:pointer;
+    border-radius:50%;
+}
+.signup-close-btn:hover{
+    background-color: #e0e0e0bc;
 }
 .profile-signup{
+    cursor: pointer;
     margin-right: auto;
+    margin-left:10px;
     width: 100px;
+    z-index: 1;
+    background-color: white;
+    border: 3px black solid;
+    border-radius: 10px;
+    font-weight: bold;
 }
+.signup-continue-button{
+    /* background-color: #d90c64; */
+    display: block;
+    background: linear-gradient(to right, rgb(230, 30, 77) 0%, rgb(227, 28, 95) 50%, rgb(215, 4, 102) 100%);
+    border:0px;
+    border-radius: 10px;
+    height: 40px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    background-size: 200% 200%;
+    /* opacity: 0; */
+    transition: opacity 1.25s ease 0s;
+    
+    background-image: radial-gradient(circle at center center, rgb(255, 56, 92) 0%, rgb(230, 30, 77) 27.5%, rgb(227, 28, 95) 40%, rgb(215, 4, 102) 57.5%, rgb(189, 30, 89) 75%, rgb(189, 30, 89) 100%);
+}
+.social-media-button{
+    border:0px;
+    border-radius: 10px;
+    height: 50px;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+}
+.social-media-button:hover{
+    background-color: rgb(243, 243, 243);
+}
+.button-content-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* border: 1px red solid; */
+}
+.button-content-flex>div>p{
+    font-size: 14px;
+    line-height: 0;
+    font-weight: bold;
+    /* text-align: center; */
+    /* border: 1px red solid; */
+}
+.fa-facebook {
+    background: #3B5998;
+    border-radius:50%;
+    color: white;
+}
+.fa-google {
+    background: #ffffff;
+    color: rgb(0, 21, 255);
+}
+.fa-apple {
+    background: #ffffff;
+    color: black;
+}
+.fa-envelope {
+    background: #ffffff;
+    color: rgb(0, 33, 70);
+}
+.fa {
+position: absolute;
+margin-top:0;
+padding: 2px;
+font-size: 10px;
+left:50px;
+width: 30px;
+height:25px;
+text-align: center;
+text-decoration: none;
+margin: 5px 2px;
+/* margin-left:0;   */
+/* border: 1px red solid; */
+}  
 .search-bar{
     
     display: flex;
@@ -35,6 +135,7 @@ nav{
     padding:5px;
     padding-right: 7px;
     border-radius: 15px;
+    z-index: 1;
 }
 .search-bar>input{
     border:0px;
@@ -87,27 +188,32 @@ section{
     flex-wrap: nowrap;
     /* overflow-x: auto; */
     /* overflow-x: scroll; */
+    z-index: 1;
 }
 .category-list{
     margin-right: 20px;
     /* padding:10px; */
+    z-index: 1;
 }
 .category-list>img{
     height:30px;
     width:30px;
     margin-bottom:0;
+    z-index: 1;
 }
 .category-nav-list{
     display: flex;
     flex-direction: row;
     justify-content: start;
     overflow-x: scroll;
+    z-index: 1;
 }
 .category-nav-list>p{
 padding-left:70px;
 margin-top:5px;
 margin-bottom:5px;
 /* overflow-x: scroll; */
+z-index: 1;
 }
 .scroll-button>img{
 height:15px;
@@ -279,23 +385,26 @@ margin-bottom:5px;
 }
 .dropbtn, .fa-caret-down{
     margin-right: 10px;
-    height:50px;
-    width:50px;
+    height:0px;
+    width:0px;
     border:0px;
-    margin-left: 85vw;
+    /* margin-left: 85vw; */
     background-color:white;
-}
+    /* border: 1px red solid; */
+    z-index:0;
+} 
 .dropbtn>img{
     height:25px;
     width:25px;
     margin-left: 0;
+    z-index: 3;
 }
 .navbar a:hover, .dropdown:hover .dropbtn {
     color:grey;    
 }
 
 .dropbtn{
-margin-left:80vw;
+/* margin-left:80vw; */
 /* border:1px red solid; */
 display: flex;
 flex-direction: row;
@@ -308,22 +417,28 @@ padding-left:10px;
 padding-right:10px;
 padding-top:6px;
 height:40px;
+position: relative;
+right: 20%;
+
 }
 .dropbtn>img{
 margin-right:5px;
 }
 .dropdown-content {
 margin-top:1px;
-padding-top:3px;
-padding-bottom:3px;
+padding-top:10px;
+padding-bottom:10px;
 display: none;
-position: absolute;
+left: 85%;
+position: fixed;
 background-color: #f9f9f9;
 min-width: 160px;
 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 border-radius:15px;
 z-index: 1;
-margin-left: 78vw;
+/* border: 1px red solid; */
+/* margin-left: 78vw; */
+
 }
 
 .dropdown-content a {
@@ -344,24 +459,62 @@ background-color: #ddd;
 display: block;
 /* border-radius:15px; */
 }
-.signup{
-position: absolute;
-width: 60%;
-height:70%;
-top:70px;
-line-height: 0;
-background-color: yellow;
-border-radius: 15px;
-z-index: 1;
+.dropdown{
+    /* border: 1px red solid; */
+    margin-right:0px;
 }
+.signup{
+position: fixed;
+width: 40%;
+height:90%;
+top:35px;
+left:30%;
+margin-left:auto;
+margin-right: auto;
+background-color: white;
+border-radius: 15px;
+z-index: 6;
+/* filter: blur(0px); */
+}
+/* .signup :not(#unblurred){
+    filter: blur(0px);
+    
+} */
 .signup-form{
 display: flex;
 flex-direction: column;
 justify-content: center;
-background-color: yellow;
+background-color: white;
 text-align: center;
+margin-top:0px;
 padding:30px;
-z-index: 1;
+z-index: 3;
+border-radius: 15px;
+/* background-color: yellow; */
+z-index: 5;
+}
+.signup-header{
+    display: flex;
+    flex-direction: row;
+    margin-bottom:0px;
+    padding-bottom:0px;
+    /* background-color: red; */
+    z-index: 5;
+}
+.signup-textbox{
+    height:40px;
+    /* border-color: rgb(234, 234, 234); */
+    /* background-color: var(--f-mkcy-f); */
+}
+.signup-textbox-phone{
+    border-radius: 0px 0px 8px 8px;
+    inset: 0px 0px -1px;
+}
+.signup-textbox-country{
+    border-radius: 8px 8px 0px 0px;
+}
+.signup-privacypolicy{
+    font-size: 12px;
 }
 .signup-socialmedia-login-button{
     background-color: white;
@@ -369,7 +522,7 @@ z-index: 1;
     padding: 10px;
     border: 1px black solid;
     margin-top: 10px;
-    z-index: 1;
+    z-index: 3;
 }
 
 .heart-icon{
@@ -454,7 +607,7 @@ z-index: 1;
     margin:0;
     bottom:0;
     position:sticky;
-    z-index: 1000;
+    z-index: 1;
     margin-top:20px;
     background-color: white;;
 }
